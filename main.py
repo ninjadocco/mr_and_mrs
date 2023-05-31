@@ -22,16 +22,39 @@ def add_bg_from_local(image_file):
 st.set_page_config(layout="wide")
 add_bg_from_local('zoUiZ7.jpg')
 
+footer = """<style>
+a:link , a:visited{
+color: blue;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:hover,  a:active {
+color: red;
+background-color: transparent;
+text-decoration: underline;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: white;
+color: black;
+text-align: center;
+}
+</style>
+<div class="footer">
+<p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://github.com/ninjadocco/mr_and_mrs/blob/main/photo.png?raw=true" target="_blank">Chris Docherty</a></p>
+</div>
+"""
+st.markdown(footer, unsafe_allow_html=True)
+
+st.title("ELAINE'S HEN DO!")
 
 
-# set page layout to wide
-
-
-# standard header
-st.title("Mr & Mrs Game")
-
-
-st.header("Questions")
+st.header("Mr & Mrs Game")
 
 
 df = pandas.read_csv("data.csv", sep=",")
