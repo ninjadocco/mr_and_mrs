@@ -38,6 +38,6 @@ df = pandas.read_csv("data.csv", sep=",")
 
 for index, row in df.iterrows():
     st.subheader(f'{row["number"].title()}')
-    st.title(f'{row["question"]}')
+    st.title(f'{row["question"].title()}')
     st.video(f'{row["link"]}')
 
