@@ -1,15 +1,31 @@
 import streamlit as st
 import pandas
+import base64
+
+
+def add_bg_from_local(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+        f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
+    </style>
+    """,
+        unsafe_allow_html=True
+    )
+
+
+st.set_page_config(layout="wide")
+add_bg_from_local('zoUiZ7.jpg')
+
+
 
 # set page layout to wide
-st.set_page_config(layout="wide")
 
-description = """The term generic brand refers to a type of consumer product on the market that lacks a widely recognized name or logo
-because it typically isn't advertised. Generic brands are usually less expensive than their brand name counterparts
-due to their lack of promotion, which can inflate the cost of a good or service. These brands, which are designed as
-substitutes for more expensive brand name goods, are especially common in the food and pharmaceutical industry and
-tend to be more popular during a recession.
-"""
 
 # standard header
 st.title("Mr & Mrs Game")
@@ -22,6 +38,6 @@ df = pandas.read_csv("data.csv", sep=",")
 
 for index, row in df.iterrows():
     st.subheader(f'{row["number"].title()}')
-    st.title(f'{row["question"].title()}')
+    st.title(f'{row["question"]}')
     st.video(f'{row["link"]}')
 
