@@ -46,12 +46,15 @@ text-align: center;
 }
 </style>
 <div class="footer">
+<p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://github.com/ninjadocco/mr_and_mrs/blob/main/photo.png?raw=true" target="_blank">Bonus picture</a></p>
+<p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://github.com/ninjadocco/mr_and_mrs/blob/main/photo.png?raw=true" target="_blank">Bonus bonus picture</a></p>
 <p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://github.com/ninjadocco/mr_and_mrs/blob/main/photo.png?raw=true" target="_blank">Chris Docherty</a></p>
+
 </div>
 """
 st.markdown(footer, unsafe_allow_html=True)
 
-st.title("ELAINE'S HEN DO!")
+st.title("GEMMA'S HEN DO!")
 
 
 st.header("Mr & Mrs Game")
