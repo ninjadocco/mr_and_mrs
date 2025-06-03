@@ -20,7 +20,7 @@ def add_bg_from_local(image_file):
 
 
 st.set_page_config(layout="wide")
-add_bg_from_local('23bd8e3d1a0bec700d6ba3af66b0a49a.jpg')
+add_bg_from_local('background.png')
 
 footer = """<style>
 a:link , a:visited{
