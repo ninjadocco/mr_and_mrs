@@ -46,8 +46,7 @@ text-align: center;
 }
 </style>
 <div class="footer">
-<p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://github.com/ninjadocco/mr_and_mrs/blob/main/photo.png?raw=true" target="_blank">Bonus picture</a></p>
-<p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://github.com/ninjadocco/mr_and_mrs/blob/main/photo.png?raw=true" target="_blank">Bonus bonus picture</a></p>
+<p><a style='display: block; text-align: center;' href="https://github.com/ninjadocco/mr_and_mrs/blob/main/20250602_181822.jpg" target="_blank">Bonus picture</a></p>
 <p>Developed with ❤ by <a style='display: block; text-align: center;' href="https://github.com/ninjadocco/mr_and_mrs/blob/main/photo.png?raw=true" target="_blank">Chris Docherty</a></p>
 
 </div>
